@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ilac_yeri_ekle">
+
+    <TextView
+        android:id="@+id/lbl_resim_yazi_2"
+        android:layout_width="298dp"
+        android:layout_height="29dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="42dp"
+        android:text="Reçetedeki İlaçların Yer İşaretlenmesi"
+        android:textColor="#b82a2f"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="69dp" />
+
+    <com.example.proje_1eczaneotomasyonuygulamas.CustomImageView
+        android:id="@+id/customImageView_ilac"
+        android:layout_width="match_parent"
+        android:layout_height="353dp"
+        android:layout_below="@+id/lbl_resim_yazi_2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="-4dp"
+        app:srcCompat="@drawable/eczan" />
+
+    <com.example.proje_1eczaneotomasyonuygulamas.CustomImageView
+        android:id="@+id/customImageView2_ilac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customImageView_ilac"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="-19dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="72dp"
+        app:srcCompat="@drawable/ecza" />
+
+    <Button
+        android:id="@+id/button_ilc_yer_ekle"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/customImageView2_ilac"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="129dp"
+        android:layout_marginBottom="9dp"
+        android:backgroundTint="#B72A2F"
+        android:text="İLAÇ EKLE" />
+</RelativeLayout>
+
+
+

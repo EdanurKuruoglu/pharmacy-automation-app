@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+
+    tools:context=".Giris">
+
+    <Button
+        android:id="@+id/btn_recete"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_hosgeldin"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="137dp"
+        android:backgroundTint="#B72A2F"
+        android:text="Reçeteyi Yaz  "
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <Button
+        android:id="@+id/btn_ilac"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_recete"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#B62A2F"
+        android:text="İlaç Bilgisi"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="82dp" />
+
+    <TextView
+        android:id="@+id/lbl_hosgeldin"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="-19dp"
+        android:background="#99FFFCFC"
+        android:backgroundTint="#FFFFFF"
+        android:shadowColor="#251313"
+        android:text="  Eczane Otomasyon Sistemine Hoşgeldiniz !!!"
+        android:textColor="#B52A2F"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="52dp" />
+
+    <ImageView
+        android:id="@+id/img_giris"
+        android:layout_width="399dp"
+        android:layout_height="225dp"
+        android:layout_below="@+id/btn_ilac"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="1dp"
+        app:srcCompat="@drawable/ress"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="208dp" />
+
+</RelativeLayout>

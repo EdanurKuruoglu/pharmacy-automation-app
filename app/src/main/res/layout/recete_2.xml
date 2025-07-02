@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="412dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/btn_ileri_2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="-12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ress" />
+
+    <Button
+        android:id="@+id/btn_ileri_2"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/recyclerView"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginBottom="-56dp"
+        android:backgroundTint="#B62A2F"
+        android:text="İleri"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_below="@+id/btn_ekle_ilac_2"
+        android:layout_alignBottom="@+id/btn_ekle_ilac_2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="-186dp" />
+
+    <Button
+        android:id="@+id/btn_ekle_ilac_2"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView2"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="23dp"
+        android:backgroundTint="#B72A2F"
+        android:text="İlaç Ekle"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#B62A2F"
+        android:textColorLink="#B62A2F"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="354dp"
+        android:layout_height="232dp"
+        android:layout_below="@+id/lbl_recete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-368dp"
+        android:layout_marginTop="15dp"
+            >
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tabla_ilac_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="#404040"
+                android:backgroundTint="#FAEBEB"
+                android:stretchColumns="1">
+
+                <!-- Header Row -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#2F9A46"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="ATC Adı"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="ATC Kodu"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="Barkod"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="İlaç Adı"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <!-- Data rows will be added programmatically -->
+
+            </TableLayout>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/lbl_recete"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="34dp"
+        android:text="Reçeteyi Gir"
+        android:textColor="#B62A2F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="32dp" />
+</RelativeLayout>

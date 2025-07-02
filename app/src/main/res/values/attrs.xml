@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="CustomImageView">
+        <attr name="srcCompat" format="reference" />
+    </declare-styleable>
+</resources>

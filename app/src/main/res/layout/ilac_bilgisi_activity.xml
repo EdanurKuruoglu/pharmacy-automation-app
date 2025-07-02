@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="#2F9946"
+    tools:context=".Ilac_Bilgisi">
+
+    <SearchView
+        android:id="@+id/search_ilac"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:background="#F9EAEA"
+        android:backgroundTint="#FAEFEF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="383dp"
+        android:layout_height="427dp"
+        android:layout_below="@id/search_ilac"
+        android:layout_marginStart="-368dp"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@+id/search_ilac">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tabla_ilac_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="#404040"
+                android:backgroundTint="#FAEBEB"
+                android:stretchColumns="1">
+
+                <!-- Header Row -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#2F9A46"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="ATC Adı"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="ATC Kodu"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="Barkod"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="İlaç Adı"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <!-- Data rows will be added programmatically -->
+
+            </TableLayout>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="311dp"
+        android:layout_height="182dp"
+
+        android:layout_below="@+id/scrollView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="-2dp"
+        app:srcCompat="@drawable/ress" />
+
+    <ImageButton
+        android:id="@+id/img_btn_ekle"
+        android:layout_width="64dp"
+        android:layout_height="56dp"
+        android:layout_alignStart="@+id/img_logo"
+        android:layout_alignTop="@+id/img_logo"
+        android:layout_marginStart="-9dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="99dp"
+        android:backgroundTint="#F9EEEE"
+        android:src="@drawable/baseline_add_24"
+        tools:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "417005032020",
+    "project_id": "proje-1-1f3d0",
+    "storage_bucket": "proje-1-1f3d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417005032020:android:55352594450f5db7d353c1",
+        "android_client_info": {
+          "package_name": "com.example.proje_1eczaneotomasyonuygulamas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQvnyPmSweJPAhUHiT16KmB-TUbXYIxkA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
